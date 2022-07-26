@@ -1,18 +1,18 @@
 import os
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, ForceReply
 
-START_IMG = "https://telegra.ph/file/a349ecb55c622ecf27b07.jpg"
+START_IMG = "https://telegra.ph/file/5b7032c04e994f5319e07.jpg"
 
 START_TEXT = """
-Hello there 👋
-**I am Assistant bot of [Sithija](https://t.me/Itsmesithija)**
+Hello there {message.from_user.mention}👋
+**I am Assistant bot of [Gavesh Bimsath](Gavesh Bimsath 🇱🇰)**
 """
 
 START_BUTTON = InlineKeyboardMarkup(
                [
                 [
-                 InlineKeyboardButton("❤️\u200d🔥About❤️\u200d🔥", url='https://t.me/ItsMeSithija'),
-                 InlineKeyboardButton("⭕️Subscribe⭕️", url='https://youtube.com/channel/UCFH_E0cu7U8GMjEJGnSvYjA')
+                 InlineKeyboardButton("❤️\u200d🔥About❤️\u200d🔥", url='https://gbimsath.ml'),
+                 InlineKeyboardButton("⭕️Follow⭕️", url='https://instagram.com/gavesh_bimsath')
                 ],
                 [
                   InlineKeyboardButton("◈━━━━━━━━━━━━━◈", callback_data="stats_callback"),
@@ -40,7 +40,7 @@ HELP_BUTTON = InlineKeyboardMarkup(
                   InlineKeyboardButton("📛More Tools📛", callback_data='toolmenu')
                 ],
                 [
-                  InlineKeyboardButton("Repo", url='https://github.com/Sithijatd/Telegram-feedback-bot')
+                  InlineKeyboardButton("Repo", url='https://github.com/gbimsath/Telegram-feedback-bot')
                 ],
                 [
                   InlineKeyboardButton("🔙Back", callback_data='startmenu'),
@@ -50,7 +50,7 @@ HELP_BUTTON = InlineKeyboardMarkup(
 
 BOTSTATUS_TEXT = """
 **Bᴏᴛ Sᴛᴀᴛᴜꜱ** ```rᴏᴏᴛ : ~ $ bᴀꜱʜ```
-Assistant of ItsMeSithija
+Assistant of *gbimsath*
 """
 
 BOTSTATUS_BUTTON = InlineKeyboardMarkup(
@@ -113,15 +113,15 @@ QUOTE_BUTTON = InlineKeyboardMarkup(
         ]]
 )
 
-SITHIJATD_TEXT = """ Hey☘️,\n you can find Sithija in these social medias."""
+SITHIJATD_TEXT = """ Hey☘️,\n you can find Gavesh in these social medias."""
 
 SITHIJATD_BUTTONS = InlineKeyboardMarkup(
               [
                 [
-                  InlineKeyboardButton('🔵Telegram🔵' , url='https://t.me/ItsMeSithija'),
+                  InlineKeyboardButton('🔵Telegram🔵' , url='https://t.me/gbimsath'),
                 ],
                 [
-                  InlineKeyboardButton('⭕Youtube⭕' , url='https://youtube.com/channel/UCFH_E0cu7U8GMjEJGnSvYjA'),
+                  InlineKeyboardButton('⭕Instagram⭕' , url='https://instagram.com/gavesh_bimsath'),
                 ], 
               ]
 )
