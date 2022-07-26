@@ -33,7 +33,7 @@ def song(client, message):
         thumb = requests.get(thumbnail, allow_redirects=True)
         open(thumb_name, 'wb').write(thumb.content)
         
-        performer = f"〢ImSithijaBot〣"  
+        performer = f"〢Gavesh Bimsath 🇱🇰〣"  
         duration = results[0]["duration"]
         url_suffix = results[0]["url_suffix"]
         views = results[0]["views"]
@@ -55,7 +55,7 @@ def song(client, message):
 ⏳ **Duration:** `{duration}`
 👀 **Views:** `{views}` 
 👤**Requested By**: {message.from_user.mention()}
-📤 **Uploaded By: [❦Iᴛ'ꜱ Mᴇ Sɪᴛʜɪᴊᴀ❦](https://t.me/ItsMeSithija)**
+📤 **Uploaded By: [Gavesh Bimsath 🇱🇰](https://t.me/gbimsath)**
         """)
         secmul, dur, dur_arr = 1, 0, duration.split(':')
         for i in range(len(dur_arr)-1, -1, -1):
