@@ -27,7 +27,7 @@ async def bot_sys_stats():
     disk_usage = psutil.disk_usage('/').percent
     total_users = await db.total_users_count()
     stats = f"""
-💡Sithija's assistant bot
+💡Gavesh's assistant bot
 
 • 💽Tᴏᴛᴇʟ Dɪꜱᴋ Sᴘᴀᴄᴇ: {total}
 • 💿Uꜱᴇᴅ Sᴘᴀᴄᴇ: {used}({disk_usage}%)
@@ -36,7 +36,7 @@ async def bot_sys_stats():
 • 🖲Rᴀᴍ Uꜱᴀɢᴇ: {ram_usage}%
 • ⚡️Tᴏᴛᴀʟ Uꜱᴇʀꜱ👀: {total_users}
 
-@ImSithijabot
+@gbimsath_bot
 """
 
     return stats
