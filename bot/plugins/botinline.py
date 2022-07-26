@@ -13,8 +13,8 @@ async def autorep(_, CallbackQuery):
 AUTOREP_BUTTON = InlineKeyboardMarkup(
               [
                 [
-                  InlineKeyboardButton('🔵Telegram🔵' , url='https://t.me/ItsMeSithija'),
-                  InlineKeyboardButton('⭕Youtube⭕' , url='https://youtube.com/channel/UCFH_E0cu7U8GMjEJGnSvYjA'),
+                  InlineKeyboardButton('🔵Telegram🔵' , url='https://t.me/gbimsath'),
+                  InlineKeyboardButton('🌐Website🌐' , url='https://gbimsath.ml'),
                 ], 
                 [
                  InlineKeyboardButton('〣────────────────〢' , callback_data='auto_rep'),
@@ -28,9 +28,9 @@ async def search(_, query):
     if query.query == "SITHIJA_TD":
         answers.append(
             InlineQueryResultArticle(
-                title="Sithija's Assistant",
+                title="Gavesh Bimsath's Bot",
                 thumb_url="https://telegra.ph/file/3bbc2afd81355ba72f5d3.jpg",
-                input_message_content=InputTextMessageContent(f"Hello there 👋\n\n🔰Please Use @ImSithijabot to contract me🔰\n🍀Sithija is away from Telegram\n\n💥Reason - O/L exam✍\n 📊Status - Offline⛔️"),
+                input_message_content=InputTextMessageContent(f"Hello there 👋\n\n🔰Please Use @gbimsath_bot to contract me🔰\n🍀Gavesh is away from Telegram\n\n💥Reason - O/L exam✍\n 📊Status - Offline⛔️"),
                 reply_markup=AUTOREP_BUTTON,
                 )
             )
