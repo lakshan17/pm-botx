@@ -1,8 +1,8 @@
 {
-    "name": "Telegram Feedback Bot",
+    "name": "Gavesh Bimsath's Assistant",
     "description": "Simple Feedback bot for Telegram",
-    "repository": "https://github.com/Sithijatd/Telegram-feedback-bot",
-    "logo": "https://telegra.ph/file/4f211c40e9e0e06aea236.jpg",
+    "repository": "https://github.com/gbimsath/Telegram-feedback-bot",
+    "logo": "https://telegra.ph/file/5b7032c04e994f5319e07.jpg",
     "keywords": [
     "python3",
     "telegram",
