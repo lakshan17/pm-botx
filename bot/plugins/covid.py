@@ -51,7 +51,7 @@ REPLY_MARKUPL = InlineKeyboardMarkup(
                     InlineKeyboardButton(f"🇱🇰Local" , callback_data="localcovide") 
                 ],
                 [
-                    InlineKeyboardButton("💡 Bot 💡", url="https://t.me/ImSithijabot")
+                    InlineKeyboardButton("🤖 Bot 🤖", url="https://t.me/ImSithijabot")
                 ],
 
             ]
@@ -64,7 +64,7 @@ REPLY_MARKUPG = InlineKeyboardMarkup(
                     InlineKeyboardButton(f"🇱🇰Local" , callback_data="localcovide") 
                 ],
                 [
-                    InlineKeyboardButton("💡 Bot 💡", url="https://t.me/ImSithijabot")
+                    InlineKeyboardButton("🤖 Bot 🤖", url="https://t.me/ImSithijabot")
                 ],
 
             ]
