@@ -40,7 +40,7 @@ async def broadcast_handler(m: Message):
         if not broadcast_ids.get(broadcast_id):
             break
     out = await m.reply_text(
-        text=f"**Broadcast Started!**\n\n**__You will be notified with log file when all the users are notified__** ⛔️\n\n`@ImSithijaBot 🛡`"
+        text=f"**Broadcast Started!**\n\n**__You will be notified with log file when all the users are notified__** ⛔️\n\n`@gbimsath_bot 🛡`"
     )
     start_time = time.time()
     total_users = await db.total_users_count()
@@ -85,13 +85,13 @@ async def broadcast_handler(m: Message):
     await out.delete()
     if failed == 0:
         await m.reply_text(
-            text=f"**Broadcast Completed!** in `{completed_in}`\n\n**- Total Users** `{total_users}.`\n**- Total Done** {done}, {success} **Success and {failed} failed.**\n\n @ImSithijaBot 🚀\n #broadcast",
+            text=f"**Broadcast Completed!** in `{completed_in}`\n\n**- Total Users** `{total_users}.`\n**- Total Done** {done}, {success} **Success and {failed} failed.**\n\n @gbimsath_bot 🚀\n #broadcast",
             quote=True
         )
     else:
         await m.reply_document(
             document='broadcast.txt',
-            caption=f"**Broadcast Completed!** in `{completed_in}`\n\n**- Total Users** `{total_users}.`\n**- Total Done** {done}, {success} **Success and {failed} failed.**\n\n @ImSithijaBot 🚀\n #broadcast",
+            caption=f"**Broadcast Completed!** in `{completed_in}`\n\n**- Total Users** `{total_users}.`\n**- Total Done** {done}, {success} **Success and {failed} failed.**\n\n @gbimsath_bot 🚀\n #broadcast",
             quote=True
         )
     await aiofiles.os.remove('broadcast.txt')
