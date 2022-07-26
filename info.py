@@ -5,7 +5,7 @@ START_IMG = "https://telegra.ph/file/5b7032c04e994f5319e07.jpg"
 
 START_TEXT = """
 Hello there {message.from_user.mention}👋
-**I am Assistant bot of [Gavesh Bimsath](Gavesh Bimsath 🇱🇰)**
+**I am Assistant bot of [Gavesh Bimsath 🇱🇰](https://t.me/gbimsath)**
 """
 
 START_BUTTON = InlineKeyboardMarkup(
