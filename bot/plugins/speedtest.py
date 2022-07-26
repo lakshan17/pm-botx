@@ -10,7 +10,7 @@ from config import Config
 from bot.Utilities.formatters import bytes
 
 
-@bot.on_message(filters.command("speedtest") & filters.user(Config.OWNER) & ~filters.edited)
+@bot.on_message(filters.command("speedtest") & filters.user(Config.OWNER))
 async def statsguwid(_, message):
     m = await message.reply_text("Running Speed test")
     try:
