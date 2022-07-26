@@ -11,7 +11,6 @@ from PIL import Image, ImageDraw, ImageFont
 import random
 import requests
 import shutil
-from bot.plugins.fsub import ForceSub
 
 repmark = InlineKeyboardMarkup(
       [
