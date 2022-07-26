@@ -11,7 +11,7 @@ logging.basicConfig(
 
 LOGGER = logging.getLogger(__name__)
 
-bot = Client("pmbot", bot_token=Config.BOT_TOKEN, api_hash=Config.API_HASH, api_id=Config.APP_ID,)
-tele = TelegramClient("telethon", Config.APP_ID, Config.API_HASH)
+bot = Client("pmbot", bot_token=Config.BOT_TOKEN, api_hash=Config.API_HASH, api_id=Config.API_ID,)
+tele = TelegramClient("telethon", Config.API_ID, Config.API_HASH)
 aiohttpsession = aiohttp.ClientSession()
 
