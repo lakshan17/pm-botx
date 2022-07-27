@@ -3,11 +3,11 @@ from os import environ
 from os import getenv
 
 class Config(object):
-	API_ID = int(os.environ.get(API_ID))
+	API_ID = os.environ.get("API_ID")
 	API_HASH = os.environ.get("API_HASH")
 	BOT_TOKEN = os.environ.get("BOT_TOKEN")
 	BOT_USERNAME = os.environ.get("BOT_USERNAME")
-	BOT_OWNER = int(os.environ.get(BOT_OWNER))
+	BOT_OWNER = os.environ.get("BOT_OWNER")
 	SESSION_STRING = environ.get("SESSION_STRING", None)
 	OWNER = list(map(int, getenv("OWNER").split())) # ain karanna epa hehe
 	MONGODB_URI = os.environ.get("MONGODB_URI")
