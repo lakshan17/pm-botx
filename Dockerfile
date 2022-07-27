@@ -1,11 +1,9 @@
-FROM python:3.10
+FROM python:3.10.5
 
 WORKDIR /bot
-
-COPY requirements.txt /bot/
-
-RUN pip3 install -U -r requirements.txt
-
 COPY . /bot
-
-CMD python3 -m bot
+ 
+RUN pip install -r requirements.txt
+ 
+ENTRYPOINT ["python"]
+CMD ["-m", "bot"]
