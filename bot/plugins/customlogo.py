@@ -11,6 +11,7 @@ from PIL import Image, ImageDraw, ImageFont
 import random
 import requests
 import shutil
+from bot.plugins.fsub import ForceSub
 
 repmark = InlineKeyboardMarkup(
       [
@@ -64,7 +65,6 @@ async def logomake(_, message: Message):
     await m.delete()
 
 @bot.on_message(filters.command("mlogo") & ~filters.forwarded)
-@ForceSub
 async def logomake(_, message: Message):
     if len(message.command) != 2:
         return await message.reply_text("Please give a text.\nEx:`/mlogo Gavesh` ")
@@ -103,7 +103,6 @@ async def logomake(_, message: Message):
 
 
 @bot.on_message(filters.command("plogo") & ~filters.forwarded)
-@ForceSub
 async def logomake(_, message: Message):
     if len(message.command) != 2:
         return await message.reply_text("Please give a text.\nEx:`/plogo Gavesh` ")
