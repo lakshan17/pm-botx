@@ -1,6 +1,6 @@
 import requests
 from bot import bot
-from pyrogram import filters, idle
+from pyrogram import filters, idle, enums
 from pyrogram.types import Message
 from pyrogram.types import (InlineQuery, InlineQueryResultArticle, InlineQueryResultPhoto, InputTextMessageContent,
                             InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery)
@@ -35,6 +35,7 @@ async def startmsg(_, message):
     await AddUserToDatabase(_, message)
     file_id = "CAACAgUAAxkBAAEHOftixoGGDzNeqi8NH8Wh7nCPhIXI9AAC-gYAAoN9OVbzSN5aFCy5KR4E"
     await bot.send_sticker(message.from_user.id, file_id)
+    await bot.send_chat_action(message.chat.id, enums.ChatAction.TYPING)
     await message.reply_text(
     text=f"**✨Hello {message.from_user.mention}🙋\n🌺I am The Assistant Bot Of [Gavesh Bimsath 🇱🇰](https://t.me/gbimsath)**.\n\n__💬You Can Contract Him Using This Bot.\n📨Send Your Messages Normally And I Will Forward Them To Him.__", 
     reply_markup=startbtn,
